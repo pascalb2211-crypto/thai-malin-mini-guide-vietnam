@@ -65,16 +65,23 @@
     backdrop-filter: blur(2px);
   }
   .btn-prev:hover { background: rgba(255,255,255,0.22); }
+
+  /* Barre de navigation sous l'image (hors illustration, jamais de superposition) */
+  .navbar{display:flex;gap:12px;width:100%;max-width:680px;margin:14px auto 0;padding:0 14px;}
+  .navbar .hotspot{position:static !important;left:auto !important;right:auto !important;top:auto !important;bottom:auto !important;transform:none !important;width:auto !important;height:48px !important;flex:1;}
+  .navbar .btn-prev{flex:0 0 auto;min-width:140px;}
 </style>
 </head>
 <body>
 
 <div class="page">
   <img src="images/page20.webp" alt="Gastronomie vietnamienne - sp&#xE9;cialit&#xE9;s r&#xE9;gion par r&#xE9;gion, Nord Centre Sud, street food &#xE0; tester, boissons et douceurs, les bons r&#xE9;flexes du gourmand - Nou artrouv au Vietnam">
-
+</div>
+<div class="navbar">
   <a href="page19.html" class="hotspot btn-prev">&#x2190; Pr&#xE9;c&#xE9;dent</a>
   <a href="page21.html" class="hotspot btn-next">Suivant &#x2192;</a>
 </div>
+
 
 </body>
 </html>
